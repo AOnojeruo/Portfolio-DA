@@ -1,9 +1,10 @@
-# data analyst
+# Data analytics 
 
-### education
+### Education
 Psychology, MA
 
 Generations UK & Ireland  Data Analytics bootcamp
 
-#### projects 
+#### Projects 
+- ecommerce power bi 
 
