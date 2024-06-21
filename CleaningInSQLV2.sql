@@ -158,30 +158,3 @@ else null
 end 
 
 
-/* if we wanted to remove duplicates 
-
-
-WITH RowNumCTE AS(
-Select *,
-	ROW_NUMBER() OVER (
-	PARTITION BY ParcelID,
-				 PropertyAddress,
-				 SalePrice,
-				 SaleDate,
-				 LegalReference
-				 ORDER BY
-					UniqueID
-					) row_num
-
-From [Nashville Housing Data for Data Cleaning]
---order by ParcelID
-)
-Select *
-From RowNumCTE
-Where row_num > 1
-Order by PropertyAddress
-
-
-
-Select *
-From [Nashville Housing Data for Data Cleaning] */
