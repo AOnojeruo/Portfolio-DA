@@ -10,9 +10,6 @@ Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, 
 SELECT location,date,total_cases,new_cases,total_deaths,population
   FROM [Project].[dbo].[CovidDeaths]
   WHERE continent is not null 
-	  --and total_cases is not null 
-	  --and new_cases is not null 
-	  --and total_deaths  is NOT  NULL
   order by 1,2
 
 -- mortality rate
@@ -21,7 +18,7 @@ SELECT location,date,total_cases,new_cases,total_deaths,population
 Select location,date,total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 From [Project].[dbo].[CovidDeaths]
 Where continent is not null 
-	--and total_deaths is not null  
+	 
 order by 1,2
 
  
