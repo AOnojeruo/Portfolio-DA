@@ -15,7 +15,7 @@ Update dbo.[Nashville Housing Data for Data Cleaning]
 SET SaleDate = CONVERT(Date,SaleDate)
 
 -- Adjusting property address column.
-/*each unique parcle id corresponds to a specific address. however, some addresses are missing but can be linked to an adress throughtheir unique parcel id.
+/*each unique parcle id corresponds to a specific address. however, some addresses are missing but can be linked to an adress through their unique parcel id.
 we are filling in  missing addresses associated with their unique parel id */
 
 Select *
